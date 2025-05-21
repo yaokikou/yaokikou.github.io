@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>À propos - TECHNOVAServices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #main {
+            flex: 1;
+            padding: 40px 0;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: #354a37;
+            margin-bottom: 20px;
+        }
+
+        .about-header p {
+            font-size: 1.5rem;
+            color: #4fbbb6;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        /*a propos de nos valeurs*/
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h2 {
+            color: #0f27b1;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            /* petite modification sur les transitions */
+            color: #555;
+            background: white;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            height: 285px;
+            font-size: 1.2em;
+            opacity: 0.9;
+            text-align: justify;
+        }
+
+        
+        /* gestion du hover sur les paragraphes */
+
+        .about-text p:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #cecece;
+        }
+
+        /*a propos de nos Valeurs*/
+
+        .values-list {
+            list-style-type: none;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);                                                             /* petite modification sur les transitions */
+            transition: transform 0.3s;
+            border-radius: 10px;
+            padding: 30px;
+           
+        }
+
+        /* gestion du hover sur les valeurs */
+
+        .values-list:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #cecece;
+        }
+
+        .values-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            color: #444;
+            font-size: 1.2em;
+        }
+
+
+
+        .values-list li:before {
+            content: "✓";
+            color: #e8491d;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .team-section {
+            background: #f9f9f9;
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #35424a;
+            font-size: 2rem;
+        }
+
+        .team-carousel {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            margin: 0 15px;
+        }
+
+        .team-member-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 5px solid #575555;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            color: #0e67c0;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+
+        .team-member p {
+            color: #4ea143;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .team-member .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .team-member .social-links a {
+            color: #35424a;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .team-member .social-links a:hover {
+            color: #1d42e8;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e8491d;
+            margin-bottom: 10px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #e8491d !important;
+            font-size: 30px !important;
+        }
+
+        .slick-prev {
+            left: -40px !important;
+        }
+
+        .slick-next {
+            right: -40px !important;
+        }
+
+        @media (max-width: 768px) {
+            .about-header h1 {
+                font-size: 2rem;
+            }
+
+            .team-member-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .slick-prev {
+                left: -20px !important;
+            }
+
+            .slick-next {
+                right: -20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TECHNOVA</span>Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>  
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="current"><a href="apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="about-container">
+            <div class="about-header">
+                <h1>À propos de TechServices</h1>
+                <p>Depuis 2010, TechServices fournit des solutions informatiques innovantes et personnalisées pour aider
+                    les entreprises à atteindre leurs objectifs numériques.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Notre histoire</h2>
+                    <p>Fondée par trois passionnés de technologie, TechServices est née de la volonté d'offrir des
+                        solutions informatiques accessibles et de qualité aux petites et moyennes entreprises. <br><br>
+                        Ce qui a commencé comme un petit atelier de réparation est rapidement devenu une entreprise
+                        reconnue pour son expertise dans divers domaines informatiques.</p>
+                </div>
+
+                <div class="about-text">
+                    <h2>Notre mission</h2>
+                    <p>Nous nous engageons à fournir des services informatiques de pointe  et solide tout en maintenant une
+                        approche humaine et personnalisée. <br><br>
+                        Notre objectif est de devenir un partenaire technologique de confiance pour nos clients, les
+                        accompagnant dans chaque étape de leur transformation numérique.</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nos valeurs</h2>
+                    <ul class="values-list">
+                        <li>Excellence technique et innovation constante</li>
+                        <li>Approche client centrée sur les besoins réels</li>
+                        <li>Transparence dans nos relations et nos tarifs</li>
+                        <li>Éthique professionnelle et respect des engagements</li>
+                        <li>Formation continue de nos équipes</li>
+                    </ul>
+                </div>
+
+                <div class="about-text">
+                    <h2>Notre vision</h2>
+                    <p>Nous croyons en une technologie qui sert l'humain et non l'inverse. Notre vision est de créer des
+                        solutions qui simplifient les processus métiers tout en étant accessibles à tous. <br><br>
+                        À travers nos services, nous contribuons à réduire la fracture numérique et à démocratiser
+                        l'accès aux technologies de pointe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="team-container">
+                <h2 class="section-title">Notre équipe d'experts</h2>
+
+                <div class="team-carousel">
+                    <!-- Membre d'équipe 1 -->
+                    <div class="team-member">
+                        <img src="vital.jpg" alt="Kossi AYI" class="team-member-img">
+                        <h3>Kossi AYI</h3>
+                        <p>Directeur Technique</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/mood-ayi-3b9709356/"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Membre d'équipe 2 -->
+                    <div class="team-member">
+                        <img src="judith.jpg" alt="Judith AGBASSAH" class="team-member-img">
+                        <h3>Judith AGBASSAH</h3>
+                        <p>Responsable Développement</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Membre d'équipe 3 -->
+                    <div class="team-member">
+                        <img src="lazarus.jpg" alt="Yao AKOUETEt" class="team-member-img">
+                        <h3>Yao AKOUETE</h3>
+                        <p>Expert Sécurité</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/akouete-yao"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Membre d'équipe 4 -->
+                    <div class="team-member">
+                        <img src="das.jpg" alt="Espoir DA SILVEIRA " class="team-member-img">
+                        <h3>Espoir DA SILVEIRA</h3>
+                        <p>Chef de Projet</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: auto;">
+        <p style="font-size: 1.2em;">Copyright &copy; 2025 ,TECHNOVAServices <br> Tout droits réservés</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.team-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

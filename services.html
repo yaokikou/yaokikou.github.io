@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Nos Services - TECHNOVAServices</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Styles spécifiques pour la page des services */
+        .page-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color: #35424a;
+        }
+
+        .service-content {
+            font-size: 1.3em;
+        }
+
+        .dark h3 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        .dark {
+            width: 300px;
+            height: 350px;
+        }
+
+        .quote-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .nous-choisir {
+            width: 600px;
+            height: 350px;
+            font-size: 1.1em;
+        }
+
+        .nous-choisir h3 {
+            margin-top: 20px;
+            font-size: 2em;
+
+        }
+
+        .nous-choisir p {
+            margin-top: 9px;
+            font-size: 1em;
+        }
+
+        .nous-choisir a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: blue;
+        }
+
+        .nous-choisir a:hover {
+            color: orangered;
+        }
+
+        .nous-choisir p:hover {
+            color: rgb(82, 79, 82);
+            font-weight: bold;
+            font-size: 0.9em;
+            transform:translateY(-5px); ;
+        }
+        .service-content:hover{
+            font-weight: bold;
+        }
+        
+           
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TECHNOVA</span>Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li class="current"><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Nos Services</h1>
+                <div class="services-container">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="dev.jpg" alt="Développement Web">
+                        </div>
+                        <div class="service-content">
+                            <h3>Développement Web</h3>
+                            <p>Nous créons des sites web modernes (E-commerce ,Wordpress,Victrine) et des applications
+                                mobiles ,Web sur mesures et optimisé par le SEO et des publicités en ligne pour
+                                augmenter votre
+                                visibilité. <br> Notre expertise couvre les technologies front-end (HTML5, CSS3, 
+                                JavaScript) et back-end (PHP, Python, Node.js) pour des solutions robustes et évolutives. <br><br>
+                                🛠 Optez pour une IT sans stress ! 💻🌐
+                            </p>
+                            <p class="price">Prix: À partir de 100.000CFA</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="maintenance.jpg" alt="Maintenance Informatique">
+                        </div>
+                        <div class="service-content">
+                            <h3>Maintenance Informatique</h3>
+                            <p>Service de maintenance préventive et corrective pour votre parc informatique.
+                                vous bénéficier d'une assistances techniques et d'un support technique 24h/24 et 7j/7. <br>
+                                Nous assurons la surveillance de votre parc informatique, avec des interventions rapides 
+                                (à distance ou sur site),des mises à jour sécurisées et une optimisation permanente de vos équipements et sytèmes <br><br>
+                                💻 Développons votre projet ensemble !
+                            </p>
+                            <p class="price">Prix: À partir de 40.000CFA</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="security.jpg" alt="Sécurité Informatique">
+                        </div>
+                        <div class="service-content">
+                            <h3>Sécurité Informatique</h3>
+                            <p>Protégez votre entreprise avec nos solutions complètes : audits de vulnérabilités, 
+                                installation de firewalls, chiffrement des données, protection anti-malware et 
+                                formation des employés. Nous garantissons la conformité RGPD et une surveillance 
+                                24/7 pour une sécurité sans faille. <br><br>
+
+                                🔒 Renforcez votre sécurité dès maintenant !.
+                            </p>
+                            <p class="price">Prix: À partir de 300.000CFA</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="formation.jpg" alt="Formation Informatique">
+                        </div>
+                        <div class="service-content">
+                            <h3>Formation</h3>
+                            <p>Nous proposons des formations adaptées à tous niveaux (débutants à experts) sur les 
+                                logiciels bureautiques, la cybersécurité, le développement web et l'administration
+                                 réseau. Nos sessions pratiques en présentiel ou à distance boostent vos compétences
+                                  rapidement. <br><br>
+                                🎓 Boostez votre expertise dès maintenant !.</p>
+                            <p class="price">Prix: À partir de 200.000CFA</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="quote-section">
+                <div class="dark">
+                    <h3>Demander un devis</h3>
+                    <form class="quote">
+                        <div>
+                            <label for="nom">Nom :</label><br>
+                            <input type="text" name="nom" placeholder="Nom" required
+                                style="width: 200px; height: 35px ;border-radius: 7px;">
+                        </div>
+                        <div>
+                            <label for="email">Email :</label><br>
+                            <input type="email" name="email" placeholder="Adresse Email" required
+                                style="width: 200px; height: 35px ;border-radius: 7px;">
+                        </div>
+                        <div>
+                            <label for="message">Message :</label><br>
+                            <textarea placeholder="Message" name="message" required
+                                style="width: 200px; border-radius: 7px;"></textarea>
+                        </div>
+                        <button class="button_1" type="submit">Envoyer</button>
+                    </form>
+                </div>
+                <div class="nous-choisir">
+                    <h3>Pourquoi nous choisir ?</h3>
+                    <p>Parce que nous allions l'expertise technique et approche client sur mesure !
+                        Notre équipe passionnée intervient rapidement pour des solutions informatiques fiables,
+                        que ce soit en dépannage urgent, création de sites web performants ou sécurité des données.
+                        Avec des tarifs transparents, un support 24/7 et 12 ans d'expérience, nous transformons vos
+                        défis tech en opportunités. Votre satisfaction est notre priorité - la preuve : 200+ clients
+                        nous font confiance. 🚀 L'innovation commence ici.
+                    </p>
+                    <a href="apropos.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p >2025 ,TECHNOVAServices <br> Tout droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

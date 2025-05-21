@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>TECHNOVAServices - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #showcase p {
+            font-size: 1.7em;
+        }
+
+        .container2 {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .container2 h2 {
+            font-size: 2.5em;
+            color: #35424a;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .stats-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+            padding: 30px;
+            background: #2a7fb4;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #040504;
+            margin-bottom: 10px;
+        }
+
+        .about-text1 {
+            font-size: 1.2em;
+            color: #666;
+            height: 200px;
+            width: 100%;
+            margin-top: 70px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(241, 238, 238, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: justify;
+        }
+
+        .about-text1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background: rgb(240, 192, 200);
+            font-weight: bold;
+        }
+
+        .about-text1 p {
+            line-height: 2em;
+            color: #666;
+        }
+
+        .about-text1 a {
+            color: #d4684a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-text1 a:hover {
+            color: #35424a;
+            text-decoration: underline;
+        }
+        .service-content{
+            font-size: 0.7em;
+            width: 179vh;
+            height: 180px;
+            margin-left: 87px;
+            color: #666;
+            margin-top: 20px;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(241, 238, 238, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: justify;
+            padding-top: 1cm;
+        }
+        .service-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+        }
+        .service-content a{
+            text-decoration: none;
+            color: #d4684a;
+            font-size: 0.8em;
+            font-weight:bold
+        }
+        footer p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TECHNOVA</span>Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>BIENVENNUE CHEZ TECHNOVAServices</h1>
+            <p> Votre Services Informatiques Professionnels</p>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="containerservices">
+            <h3>Services</h3>
+            <div class="service-content">
+                <p> 
+                    Nous offrons une large gamme de services informatiques pour répondre à vos besoins spécifiques.
+                    Que vous ayez besoin de développement web, de gestion de réseaux, ou de solutions de base de
+                    données, notre équipe d'experts est là pour vous accompagner.
+                    Pour en savoir plus sur nos services, cliquer ici <a href="services.html">En savoir plus</a>.
+                    Voici les domaines que couvre notre entreprise :
+                </p>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="box">
+                <img src="web.png" alt="Image Web Development" width="100px" height="80px">
+                <h3>Développement Web</h3>
+                <p>Création de sites web modernes et responsives adaptés à vos besoins.</p>
+            </div>
+            <div class="box">
+                <img src="network.jpg" alt="Image Réseaux" width="120px" height="80px">
+                <h3>Réseaux & Sécurité</h3>
+                <p>Configuration ,sécurisation et maintenance de vos infrastructures réseau.</p>
+            </div>
+            <div class="box">
+                <img src="database.jpg" alt="Image Base de Données" width="100px" height="80px">
+                <h3>Base de Données</h3>
+                <p>Conception, optimisation et maintenance de vos bases de données.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container2">
+            <h2>Pourquoi confier une mission <br> à notre entreprise ?</h2>
+        </div>
+        <div class="about-container">
+            <div class="about-text1">
+                <p>
+                    Chez TECHNOVAServices, nous nous engageons à fournir des solutions informatiques de haute qualité.
+                    Notre équipe d'experts est dédiée à la réussite de vos projets, en vous offrant un service
+                    personnalisé et adapté à vos besoins spécifiques.
+                    Pour en savoir plus sur notre entreprise,cliquer ici <a href="apropos.html">En savoir plus</a>.
+                    Voici quelque preuve de notre expertise et de notre engagement envers nos clients !!!<br>
+
+                </p>
+
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <p>Clients satisfaits</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">15</div>
+                    <p>Experts techniques</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <p>Projets réalisés</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <p>Ans d'expérience</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container2 h2 {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .stat-item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .stat-item p {
+                font-size: 1.3em;
+                margin-top: -20px;
+            }
+        </style>
+    </section>
+    <section>
+        <p>
+
+        </p>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 , By TECHNOVAServices <br> Tout droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Contact - TECHNOVAServices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 0;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+
+        .contact-info-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-form-container {
+            flex: 1;
+            min-width: 300px;
+            
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding-bottom: 105px;
+        }
+
+        .contact-info {
+            background: #35424a;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #35424a;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #e8491d;
+            outline: none;
+        }
+
+        .contact-button {
+            width: 100%;
+            padding: 12px;
+            background: #3ec9ce;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .contact-button:hover {
+            background: #b3a7a4;
+        }
+
+        .contact-info h3 {
+            color: #aa9743;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-details p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contact-details i {
+            margin-right: 15px;
+            color: #ada29f;
+            font-size: 20px;
+            width: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #e81de8;
+        }
+
+        .privacdy-policy {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .privacy-policy a {
+            color: #06e2e2;
+            text-decoration: none;
+        }
+
+        .privacy-policy a:hover {
+            color: #06e;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">TECHNOVA</span>Services</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <h2 class="page-title" style="text-align: center; margin-bottom: 25px; color: #35424a;">Nous
+                        contacter</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" placeholder="Sujet de votre message">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Votre message" required style="width: 405px;"></textarea>
+                        </div>
+                        <button type="submit" class="contact-button">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <h3>Nos coordonnées</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i>Lomé - TOGO ,Bèkpota</p>
+                        <p><i class="fas fa-phone"></i> +228 79 56 19 33</p>
+                        <p><i class="fas fa-envelope"></i>technovaservicestogo@gmail.com</p>
+                    </div>
+
+                    <h3>Horaires d'ouverture</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-clock"></i> Lundi - Vendredi: 9h - 18h</p>
+                        <p><i class="fas fa-clock"></i> Samedi: 10h - 14h</p>
+                        <p><i class="fas fa-clock"></i> Dimanche: Fermé</p>
+                    </div>
+
+                    <h3>Nous suivre</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="privacy-policy">
+                        <br>
+                        <h3>Politique de confidentialité</h3>
+                        <p>
+                            Nous ne partageons pas vos informations avec des tiers sans votre consentement explicite.
+                            Veuillez vous renseigner sur notre <a href="confidentialité.html">politique de confidentialité</a> pour plus de
+                            détails.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: auto;">
+        <p style="font-size: 1.2em;">Copyright &copy; 2025 ,TECHNOVAServices <br> Tout droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
